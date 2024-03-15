@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dars</title>
+
+  <style>
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+   height:100vh;
+   background:black;
+   display:flex;
+   justify-content:center;
+}
+#txt{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   flex:1;
+   font-family:sans-serif;
+   letter-spacing:3.5px;
+   font-size:3.5rem;
+   font-weight:700;
+   position:relative;
+   transform-style:preserve-3d;
+   perspective:100px;
+  
+}
+#txt>b{
+   height:3.5rem;
+   box-shadow:0 .4rem .3rem -.3rem #aaa;
+   color:#979c9f;
+   background:linear-gradient(#aaf,#acf,#afc);
+   background-clip:text;
+   text-fill-color:transparent;
+
+   transform-origin:bottom;
+   transform:rotateX(-85deg);
+
+   animation:getUp 7s infinite;
+}
+#txt>b:nth-child(2){
+   animation-delay:.25s;
+}
+#txt>b:nth-child(3){
+   animation-delay:.5s;
+}
+#txt>b:nth-child(4){
+   animation-delay:.75s;
+}
+#txt>b:nth-child(5){
+   animation-delay:1s;
+}
+#txt>b:nth-child(6){
+   animation-delay:1.25s;
+}
+#txt>b:nth-child(7){
+   animation-delay:1.5s;
+}
+#txt>b:nth-child(8){
+   animation-delay:1.75s;
+}
+@keyframes getUp{
+   10%,50%{
+      transform:rotateX(0);
+   }
+
+
+   0%,60%,100%{
+      transform:rotateX(-85deg);
+   }
+}
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+
+<div class="txt" id="txt">
+
+  <b>V</b> <b>E</b>  <b>N</b> <b>A</b> 
+  <b>S</b> <b>O</b>  <b>F</b> <b>T</b> 
+
+
+</div>
+
+ 
+
+
+
+
+
+
+
+</body>
+</html>
